@@ -24,6 +24,8 @@ class HomePage extends Component{
                     </li>
                     <li className = {classes.li}><img   className = {classes.img} src = "pizza1.jpg"></img> 
                     </li>
+                    <li className = {classes.li}><img   className = {classes.img} src = "pizza1.jpg"></img> 
+                    </li>
                 </ul>
             </Auxilary>
         );
