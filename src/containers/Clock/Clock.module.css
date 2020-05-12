@@ -1,0 +1,27 @@
+.Clock {
+   margin-top:  160px;
+   margin-left: 960px;
+    font-family: 'Share Tech Mono', monospace;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    
+    width: 385px;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    color: black;
+    
+}
+.Time {
+   letter-spacing: 0.05em;
+   font-size: 30px;
+   padding: 5px 0;
+   width: 385px;
+}
+.Date {
+   letter-spacing: 0.1em;
+   font-size: 15px;
+   width: 385px;
+}
+
+

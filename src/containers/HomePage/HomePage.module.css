@@ -1,0 +1,79 @@
+.Input{
+   margin:0 auto;
+   position: relative;
+   display: block;
+   color: black;
+
+   appearance: none;
+   background-color: none;
+   border: 1px solid red;
+   line-height: 0;
+   font-size: 17px;
+   width: 20%;
+   display: block;
+   box-sizing: border-box;
+   padding: 10px 15px;
+   border-radius: 8px;
+   color: red;
+   font-weight: 100;
+   letter-spacing: 0.01em;
+   position: relative;
+   z-index: 1;
+}
+
+.bgImgCenter{
+   background-image: url('https://image.shutterstock.com/image-vector/seamless-pattern-pizza-design-elements-600w-644553247.jpg');
+   
+   position: relative;
+   height: 100%;
+   width: 100%;
+ }
+
+
+.Label{
+
+   transform-origin: left center;
+   color: red;
+   font-weight: 100;
+   letter-spacing: 0.01em;
+   font-size: 17px;
+   box-sizing: border-box;
+   padding: 10px 15px;
+   display: block;
+   position: absolute;
+   margin-top: -40px;
+   z-index: 2;
+   pointer-events: none;
+}
+.Button{
+   margin:0 auto;
+   position: relative;
+   display: block;
+   color: black;
+}
+.Div{
+   position: relative;
+   padding: 10px 0;
+}
+
+.DivList{
+   
+   display: flex;
+   flex-direction: row;
+}
+.ul{
+   text-align: center;
+}
+.li {
+   margin-top:  280px;
+   display: inline-block;
+   border : 1px solid black;
+   padding: 10px 15px;
+   white-space: normal;
+}
+.img{
+   display:inline-block;
+   height: 150px;
+   width:250px;
+   padding-right:20px;
+}

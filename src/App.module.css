@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  
+}
+
+.bgImgCenter{
+  background-image: url('https://image.shutterstock.com/image-vector/seamless-pattern-pizza-design-elements-600w-644553247.jpg');
+  
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
