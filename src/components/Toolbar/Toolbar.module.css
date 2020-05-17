@@ -1,0 +1,30 @@
+.Toolbar{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    font-family: Impact, Charcoal, sans-serif;
+    background-color:black;
+    padding: 0 20px;
+    z-index: 90;
+
+}
+.Toolbar nav {
+    height: 100%;
+    
+}
+
+.Button{
+    position: relative;
+    justify-content: space-between;
+    margin: 20px;
+    border-radius: 5px;
+    padding: 10px 50px;
+    background-color: white;
+    color :rgb(45, 168, 216);
+}
+@media (max-width: 499px){
+    .DesktopOnly{
+        display: none;
+    }
+}
