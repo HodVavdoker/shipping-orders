@@ -6,7 +6,7 @@
 
    appearance: none;
    background-color: none;
-   border: 1px solid red;
+   border: 1px solid black;
    line-height: 0;
    font-size: 17px;
    width: 20%;
@@ -14,7 +14,7 @@
    box-sizing: border-box;
    padding: 10px 15px;
    border-radius: 8px;
-   color: red;
+   color: rgb(133, 189, 50);
    font-weight: 100;
    letter-spacing: 0.01em;
    position: relative;
@@ -33,7 +33,7 @@
 .Label{
 
    transform-origin: left center;
-   color: red;
+   color: black;
    font-weight: 100;
    letter-spacing: 0.01em;
    font-size: 17px;
@@ -47,9 +47,23 @@
 }
 .Button{
    margin:0 auto;
+   margin-top: 25px;
    position: relative;
    display: block;
-   color: black;
+   position: relative;
+   outline: none;
+   text-decoration: none;
+   border-radius: 8px;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   text-transform: uppercase;
+   height: 40px;
+   width: 10%;
+   opacity: 1;
+   background-color: #ffffff;
+   border: 1px solid black;
+
 }
 .Div{
    position: relative;
@@ -62,18 +76,17 @@
    flex-direction: row;
 }
 .ul{
+   list-style-type: none;
    text-align: center;
+   margin-top: 100px;  
+   padding: 0; 
 }
 .li {
-   margin-top:  280px;
-   display: inline-block;
-   border : 1px solid black;
-   padding: 10px 15px;
-   white-space: normal;
+   display: inline;
+   padding: 20px;
+
 }
 .img{
-   display:inline-block;
-   height: 150px;
-   width:250px;
-   padding-right:20px;
+   width: 20%;
+
 }
