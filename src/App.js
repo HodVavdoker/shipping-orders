@@ -1,8 +1,7 @@
 import React,{ Component } from 'react';
 import './App.module.css';
 import HomePage from './containers/HomePage/HomePage';
-import Clock from './containers/Clock/Clock';
-import classes from './App.module.css';
+import Clock from './containers/Clock/Clock'
 import {Route , Switch} from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Order from './components/Order/Order';
