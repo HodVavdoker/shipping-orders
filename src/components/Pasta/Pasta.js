@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './BuildingPizza.module.css';
+import classes from './Pasta.module.css';
 
-const buildingpizza = (props) =>{
+const pasta = (props) =>{
     return(
         <div>
             <section>
@@ -67,4 +67,4 @@ const buildingpizza = (props) =>{
     );
 }
 
-export default buildingpizza;
+export default pasta;

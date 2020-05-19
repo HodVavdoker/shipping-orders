@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Clock.module.css';
 import Auxilary from '../../hoc/Auxilary/Auxilary';
-import auxilary from '../../hoc/Auxilary/Auxilary';
-
 class Clock extends Component{
 
     state = {
