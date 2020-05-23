@@ -1,0 +1,42 @@
+.BuildControl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+
+}
+
+.BuildControl button{
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 5px;
+    height: 35px;
+    width: 35px;
+    border:  0.002em solid black;
+    cursor: pointer;
+    outline: none;
+    background-color: grey;
+    color: white;
+    border-radius: 50%;
+}
+
+.Right {
+
+    background: linear-gradient(to right, grey 50%, white 50%);
+}
+.Right:hover, .Right:active{
+    color: white;
+    background-color: red;
+}
+.Left {
+    background: linear-gradient(to right, white 50%, grey 50%);
+}
+.Full {
+    background: linear-gradient(to right, grey 100%);
+}
+.Label{
+    padding: 10px;
+    font-weight: bold;
+    width: 80px;
+}

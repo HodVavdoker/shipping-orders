@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Pasta.module.css';
+import classes from './Salads.module.css';
 
-const pasta = (props) =>{
+const salads = (props) =>{
     return(
         <div>
             <section>
                 <header className = {classes.header}> 
-                    <h2>פסטות</h2>       
+                    <h2>סלטים</h2>       
                     <button className = {classes.btnback}
                             onClick ={props.goingback}></button>            
                 </header>
@@ -14,7 +14,7 @@ const pasta = (props) =>{
                    <ul style={{listStyleType : "none"}}>
                    <li className = {classes.li}>
                    
-                    <h4> פנה </h4> 
+                    <h4> סלט יווני </h4> 
                        <button className = {classes.btn}>
                        אישי
                        </button>
@@ -26,7 +26,7 @@ const pasta = (props) =>{
                        </button>
                    </li>
                   <li className = {classes.li}>
-                   <h4> ספגטי </h4> 
+                   <h4> סלט טונה </h4> 
                        <button className = {classes.btn}>
                        אישי
                        </button>
@@ -39,12 +39,15 @@ const pasta = (props) =>{
                    </li>
                    <li className = {classes.li}>
                   
-                       <h4>רביולי </h4>
+                       <h4>סלט ים תיכוני </h4>
                        <button className = {classes.btn}>
-                       גבינה
+                       אישי
                        </button>
                        <button className = {classes.btn}>
-                       בטטה
+                       זוגי
+                       </button>
+                       <button className = {classes.btn}>
+                       משפחתי
                        </button>
                 
                    </li>
@@ -55,4 +58,4 @@ const pasta = (props) =>{
     );
 }
 
-export default pasta;
+export default salads;

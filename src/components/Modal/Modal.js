@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import Backdrop from '../../Backdrop/Backdrop';
 import classes from './Modal.module.css';
 import Auxilary from '../../hoc/Auxilary/Auxilary';
 class Modal extends Component {
@@ -10,6 +10,7 @@ class Modal extends Component {
     render () {
         return (
             <Auxilary>
+                <Backdrop show = {this.props.show} clicked = {this.props.modalClosed}/>
                 <div
                     className={classes.Modal}
                     style={{

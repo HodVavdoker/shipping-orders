@@ -7,6 +7,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('https://image.shutterstock.com/image-vector/seamless-pattern-pizza-design-elements-600w-644553247.jpg');
 }
 
 code {
