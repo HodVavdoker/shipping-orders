@@ -10,7 +10,8 @@ class HomePage extends Component{
     
     state = {
         phonenumber : "",
-        numbers : [],
+        numbers : [{type : "pizza" ,price : 10 } ],
+        sum : 0 
   };
 
     // validateUser = (number)=> {
@@ -47,11 +48,6 @@ class HomePage extends Component{
         this.setState({phonenumber : event.target.value});
     }
     NumberExist = () =>{
-
-
-      
-
-        
         const num ={
             number : this.state.phonenumber,
         } 

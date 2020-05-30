@@ -3,7 +3,6 @@
     justify-content: space-between;
     align-items: center;
     margin: 5px 0;
-
 }
 
 .BuildControl button{
@@ -23,20 +22,29 @@
 
 .Right {
 
-    background: linear-gradient(to right, grey 50%, white 50%);
-}
-.Right:hover, .Right:active{
-    color: white;
-    background-color: red;
-}
-.Left {
     background: linear-gradient(to right, white 50%, grey 50%);
 }
+.Right:hover, .Right:active{
+    
+    background: linear-gradient(to right, white 50%, #8e0000 50%);
+}
+.Left {
+    background: linear-gradient(to right, grey 50%, white 50%);
+}
+.Left:hover, .Left:active{
+    background: linear-gradient(to right, #8e0000 50%, white 50%);
+}
 .Full {
-    background: linear-gradient(to right, grey 100%);
+    background: grey;
+}
+.Full:hover, .Full:active{
+    background: #8e0000;
 }
 .Label{
     padding: 10px;
     font-weight: bold;
     width: 80px;
+}
+.activeR{
+    background: linear-gradient(to right, white 50%, #8e0000 50%);
 }

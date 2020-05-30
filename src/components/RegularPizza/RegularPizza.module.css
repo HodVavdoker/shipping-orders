@@ -14,7 +14,7 @@
     position: relative;
 }
 .h2{
-    color:#c6102e;
+    color:#8e0000;
 }
 .btnback{
 
@@ -39,21 +39,22 @@
     color: white;
 }
 .NextButton {
-    background-color: #DAD735;
+    background-color: white;
     outline: none;
     cursor: pointer;
-    border: 1px solid #966909;
-    color: #966909;
+    border: 1px solid #8e0000;
+    color: #8e0000;
     font-family: inherit;
     font-size: 1.2em;
-    padding: 15px 30px;
-    box-shadow: 2px 2px 2px #966909;
+    padding: 10px 20px;
+    box-shadow: 1px 1px 1px #8e0000;
+    border-radius: 8px 8px;
 }
 
 .NextButton:hover, .NextButton:active {
-    background-color: #A0DB41;
-    border: 1px solid #966909;
-    color: #966909;
+    background-color: #ffbc00;
+    border: 1px solid #8e0000;
+    color: #8e0000;
 }
 
 .NextButton:disabled {

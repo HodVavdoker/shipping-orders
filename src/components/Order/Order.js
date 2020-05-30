@@ -24,8 +24,14 @@ class Order extends Component{
         opensalads : false,
         opendesserts : false,
         opendrinks : false,
+        seetheextra : true,
+        active : true,
       };
 
+      toggleextras= () => {
+        this.setState({ seetheextra: !this.state.seetheextra,});
+        console.log(this.state.seetheextra);
+      };
 
       openpizza = () => {
             this.setState({ openpizza: !this.state.openpizza});
@@ -75,8 +81,10 @@ class Order extends Component{
             </Modal>
             <Modal show={this.state.openregularpizza}>
                 <RegularPizza
-                goingback = {this.openregularpizza}>
-                </RegularPizza>
+                seetheextra = {this.state.seetheextra}   
+                toggleextras = {this.toggleextras}
+                goingback = {this.openregularpizza}
+                active = {this.state.active}/>
             </Modal>
         
         <div className = {classes.div}>
