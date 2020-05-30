@@ -1,85 +1,112 @@
 import classes from './Order.module.css';
 import React, { Component } from 'react';
-import BuildingPizza from '../BuildingPizza/BuildingPizza';
+import SpecialPizza from '../SpecialPizza/SpecialPizza';
+import Pasta from '../Pasta/Pasta';
+import Salads from '../Salads/Salads';
 import Auxilary from '../../hoc/Auxilary/Auxilary';
 import Modal from '../Modal/Modal';
+import Desserts from '../Desserts/Desserts';
+import Drinks from '../Drinks/Drinks';
+import RegularPizza from '../RegularPizza/RegularPizza';
+import styled from 'styled-components'
 
+const Btn = styled.button`
+border: none;
+padding: 0;
+background: none;
+`
 class Order extends Component{
     
     state = {
-            edited : false,
+        openregularpizza : false,
+        openpizza : false,
+        openpasta : false,
+        opensalads : false,
+        opendesserts : false,
+        opendrinks : false,
+        seetheextra : true,
+        active : true,
       };
 
+      toggleextras= () => {
+        this.setState({ seetheextra: !this.state.seetheextra,});
+        console.log(this.state.seetheextra);
+      };
 
-      openbu = () => {
-            this.setState({ edited: true});
+      openpizza = () => {
+            this.setState({ openpizza: !this.state.openpizza});
       }
-
+      openregularpizza = () => {
+        this.setState({ openregularpizza: !this.state.openregularpizza});
+  }
+      openpasta = () => {
+            this.setState({ openpasta: !this.state.openpasta});
+        }
+      opensalads = () => {
+            this.setState({ opensalads: !this.state.opensalads});
+        }
+      opendesserts = () => {
+            this.setState({ opendesserts: !this.state.opendesserts});
+        }
+        opendrinks = () => {
+            this.setState({ opendrinks: !this.state.opendrinks});
+        }
     render(){
     return(
         <Auxilary>
-            <Modal show={this.state.edited}>
-                <BuildingPizza>
-                </BuildingPizza>
+            <Modal show={this.state.openpizza}>
+                <SpecialPizza
+                goingback = {this.openpizza}>
+                </SpecialPizza>
+            </Modal>
+            <Modal show={this.state.openpasta}>
+                <Pasta
+                goingback = {this.openpasta}>
+                </Pasta>
+            </Modal>
+            <Modal show={this.state.opensalads}>
+                <Salads
+                goingback = {this.opensalads}>
+                </Salads>
+            </Modal>
+            <Modal show={this.state.opendesserts}>
+                <Desserts
+                goingback = {this.opendesserts}>
+                </Desserts>
+            </Modal>
+            <Modal show={this.state.opendrinks}>
+                <Drinks
+                goingback = {this.opendrinks}>
+                </Drinks>
+            </Modal>
+            <Modal show={this.state.openregularpizza}>
+                <RegularPizza
+                seetheextra = {this.state.seetheextra}   
+                toggleextras = {this.toggleextras}
+                goingback = {this.openregularpizza}
+                active = {this.state.active}/>
             </Modal>
         
         <div className = {classes.div}>
             <ul className = {classes.ul}>
-                <li>
-                   <button onClick = {this.openbu}>פיצות מיוחדות</button>
+            <li onClick = {this.openregularpizza}>
+                   פיצות
                 </li>
-                <li className = {classes.li}>
-                    <a className = {classes.a}>
-                    <span style = {{backgroundImage: "url(" + "https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=350" + ")"}}></span>  
-                        <span className = {classes.span}>
-                            פיצות
-                        </span>
-                    </a>
+                <li  onClick = {this.openpizza}>
+                   פיצות מיוחדות
                 </li>
-
-                <li className = {classes.li}>
-                    <a className = {classes.a}>
-                        <span>
-                            img
-                        </span>    
-                        <span className = {classes.span}>
-                            פסטות
-                        </span>
-                    </a>
-                </li>
-
-                <li className = {classes.li}>
-                    <a className = {classes.a}>
-                        <span >
-                            img
-                        </span>    
-                        <span className = {classes.span}>
-                            סלטים
-                        </span>
-                    </a>
-                </li>
-
-                <li className = {classes.li}>
-                    <a className = {classes.a}>
-                        <span>
-                            img
-                        </span>    
-                        <span className = {classes.span}>
-                            קינוחים
-                        </span>
-                    </a>
-                </li>
-
-                <li className = {classes.li}>
-                    <a className = {classes.a}>
-                        <span>
-                            img
-                        </span>    
-                        <span className = {classes.span}>
-                            שתייה
-                        </span>
-                    </a>
-                </li>
+                <li className = {classes.li}
+                    onClick = {this.openpasta}>
+                    פסטות</li>
+                <li className = {classes.li}
+                    onClick = {this.opensalads}>
+                       סלטים</li>
+                <li className = {classes.li}
+                    onClick = {this.opendesserts}>
+                    קינוחים</li>
+                <li className = {classes.li}
+                    onClick = {this.opendrinks}>
+                    שתייה מתוקה</li>
             </ul>
         </div>
         </Auxilary>

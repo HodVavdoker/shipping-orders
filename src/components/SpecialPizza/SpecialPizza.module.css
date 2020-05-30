@@ -1,0 +1,35 @@
+.btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin:  3px;
+    border: 1px solid black;
+    color: black;
+  }
+.li{
+    border: 0;
+    border-bottom: 1px solid #b5b6bd;
+    padding-bottom: 18px;
+    position: relative;
+}
+.btnback{
+
+    background-image: url(https://d2pnvdnftoj8zk.cloudfront.net/wp-content/uploads/sites/5/2019/12/09101041/GO.svg);
+    content: '';
+    width: 20px;
+    height: 20px;
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    left: 10px;
+    right: auto;
+    border: 0;
+    top: calc(50% - 10px);
+    z-index: 3;
+}
+.header {
+    border: 0;
+    border-bottom: 1px solid #b5b6bd;
+}

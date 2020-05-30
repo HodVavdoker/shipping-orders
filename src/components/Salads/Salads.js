@@ -1,64 +1,55 @@
 import React from 'react';
-import classes from './BuildingPizza.module.css';
+import classes from './Salads.module.css';
 
-const buildingpizza = (props) =>{
+const salads = (props) =>{
     return(
         <div>
             <section>
                 <header className = {classes.header}> 
-                    <h2>בחירת פיצה</h2>       
-                    <button className = {classes.btnback}></button>            
+                    <h2>סלטים</h2>       
+                    <button className = {classes.btnback}
+                            onClick ={props.goingback}></button>            
                 </header>
                <div>
                    <ul style={{listStyleType : "none"}}>
                    <li className = {classes.li}>
                    
-                    <h4>פיצה אלפרדו</h4> 
+                    <h4> סלט יווני </h4> 
                        <button className = {classes.btn}>
-                       XL
+                       אישי
                        </button>
                        <button className = {classes.btn}>
-                       L
+                       זוגי
                        </button>
                        <button className = {classes.btn}>
-                       M
+                       משפחתי
+                       </button>
+                   </li>
+                  <li className = {classes.li}>
+                   <h4> סלט טונה </h4> 
+                       <button className = {classes.btn}>
+                       אישי
                        </button>
                        <button className = {classes.btn}>
-                       S
+                       זוגי
                        </button>
-
+                       <button className = {classes.btn}>
+                       משפחתי
+                       </button>
                    </li>
                    <li className = {classes.li}>
                   
-                       <h4>פיצה מיוחדת</h4>
+                       <h4>סלט ים תיכוני </h4>
                        <button className = {classes.btn}>
-                       XL
+                       אישי
                        </button>
                        <button className = {classes.btn}>
-                       L
+                       זוגי
                        </button>
                        <button className = {classes.btn}>
-                       M
+                       משפחתי
                        </button>
-                       <button className = {classes.btn}>
-                       S
-                       </button>
-                   </li>
-                   <li className = {classes.li}>
-                 
-                       <h4>פיצה שום</h4>
-                       <button className = {classes.btn}>
-                        XL
-                        </button>
-                        <button className = {classes.btn}>
-                       L
-                       </button>
-                       <button className = {classes.btn}>
-                       M
-                       </button>
-                       <button className = {classes.btn}>
-                       S
-                       </button>
+                
                    </li>
                    </ul>
                </div>
@@ -67,4 +58,4 @@ const buildingpizza = (props) =>{
     );
 }
 
-export default buildingpizza;
+export default salads;

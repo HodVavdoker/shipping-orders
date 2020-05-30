@@ -1,12 +1,12 @@
 import React from 'react';
-import classes from './Pasta.module.css';
+import classes from './Desserts.module.css';
 
-const pasta = (props) =>{
+const salads = (props) =>{
     return(
         <div>
             <section>
                 <header className = {classes.header}> 
-                    <h2>פסטות</h2>       
+                    <h2>קינוחים</h2>       
                     <button className = {classes.btnback}
                             onClick ={props.goingback}></button>            
                 </header>
@@ -14,39 +14,28 @@ const pasta = (props) =>{
                    <ul style={{listStyleType : "none"}}>
                    <li className = {classes.li}>
                    
-                    <h4> פנה </h4> 
+                    <h4>חלבי</h4> 
                        <button className = {classes.btn}>
-                       אישי
+                       מלבי
                        </button>
                        <button className = {classes.btn}>
-                       זוגי
+                       עוגת גבינה
                        </button>
                        <button className = {classes.btn}>
-                       משפחתי
+                       סופלה שוקולד
                        </button>
                    </li>
                   <li className = {classes.li}>
-                   <h4> ספגטי </h4> 
+                   <h4>פרווה</h4> 
                        <button className = {classes.btn}>
-                       אישי
+                       ריבת חלב
                        </button>
                        <button className = {classes.btn}>
-                       זוגי
+                       קדאיף
                        </button>
                        <button className = {classes.btn}>
-                       משפחתי
+                       בוואריה
                        </button>
-                   </li>
-                   <li className = {classes.li}>
-                  
-                       <h4>רביולי </h4>
-                       <button className = {classes.btn}>
-                       גבינה
-                       </button>
-                       <button className = {classes.btn}>
-                       בטטה
-                       </button>
-                
                    </li>
                    </ul>
                </div>
@@ -55,4 +44,4 @@ const pasta = (props) =>{
     );
 }
 
-export default pasta;
+export default salads;
